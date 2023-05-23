@@ -5,6 +5,7 @@ from django.contrib.auth.models import User
 from django.core import validators
 from django.forms import ModelForm
 from eshop_account.models import UserAddress, UserProfile
+import phonenumber_field
 from captcha.fields import ReCaptchaField
 
 
@@ -31,6 +32,10 @@ class RegisterForm(forms.Form):
     email = forms.EmailField(
         widget=forms.EmailInput(attrs={'placeholder': 'ایمیل خود را وارد کنید', 'class': "input-ui pr-2 "}),
         label='ایمیل'
+    )
+    phone = forms.CharField(
+        widget=forms.NumberInput(attrs={'placeholder': 'تلفن خود را وارد کنید', 'class': "input-ui pr-2"}),
+        label='تلفن'
     )
     password = forms.CharField(
         widget=forms.PasswordInput(attrs={'placeholder': 'رمز خود را وارد کنید', 'class': "input-ui pr-2 "}),
