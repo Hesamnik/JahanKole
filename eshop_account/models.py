@@ -32,7 +32,7 @@ def upload_gallery_image_path(instance, filename):
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, verbose_name='نام', related_name='profile')
     phone = models.CharField(blank=True, max_length=20, verbose_name='تلفن')
-    national_code = models.CharField(blank=True, max_length=20, verbose_name='کدملی', default='_')
+    national_code = models.CharField(blank=True, max_length=20, verbose_name='کدملی', default='*****')
     image = models.ImageField(blank=True, null=True, upload_to=upload_image_path, verbose_name='تصویر')
 
     class Meta:

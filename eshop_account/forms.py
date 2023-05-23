@@ -59,11 +59,19 @@ class RegisterForm(forms.Form):
             raise forms.ValidationError('این ایمیل قبلا استفاده شده است')
         return email
 
+    # def clean_phone(self):
+    #     phone = self.cleaned_data.get('phone')
+    #     is_exist_user_by_phone = User.objects.filter(phone=phone).exists()
+    #     if is_exist_user_by_phone:
+    #         raise forms.ValidationError('این تلفن قبلا استفاده شده است ')
+    #     else:
+    #         UserProfile.phone = phone
+
     def clean_re_password(self):
         password = self.cleaned_data.get('password')
         re_password = self.cleaned_data.get('re_password')
         if password != re_password:
-            raise forms.ValidationError('رمزهای عبور مغایرت دارند')
+            raise forms.ValidationError('رمزهای عبور باهم برابر نیستند')
         return password
 
 
