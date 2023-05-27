@@ -23,7 +23,7 @@ schema_view = get_schema_view(
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('jahan--admiN--66402-555--kole/', admin.site.urls),
     path('ckeditor/', include('ckeditor_uploader.urls')),
     path('header', header, name="header"),
     path('footer', footer, name="footer"),
