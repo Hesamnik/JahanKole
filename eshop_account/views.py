@@ -47,14 +47,16 @@ def register(request):
     if register_form.is_valid():
         username = register_form.cleaned_data.get('username')
         password = register_form.cleaned_data.get('password')
+        phone = register_form.cleaned_data.get('phone')
         email = register_form.cleaned_data.get('email')
         user = User.objects.create_user(username=username, email=email, password=password)
+        user_profile = UserProfile.objects.create(user=user, phone=phone)
         login(request, user)
         current_user = request.user
-        data = UserProfile()
-        data.user_id = current_user.id
-        data.image = 'users/image/avatar.png'  # به طور پیش‌فرض این عکس رو برای همه میزاره
-        data.save()
+        # data = UserProfile()
+        user_profile.user_id = current_user.id
+        user_profile.image = 'users/image/avatar.png'  # به طور پیش ‌فرض این عکس رو برای همه میزاره
+        user_profile.save()
         return HttpResponseRedirect(request.GET.get('next', reverse('home')))
     context = {
         'register_form': register_form

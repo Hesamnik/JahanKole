@@ -15,7 +15,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -51,6 +50,7 @@ INSTALLED_APPS = [
     'eshop_slider',
     'eshop_tag',
     'eshop_variant',
+    'phonenumber_field',
 ]
 
 MIDDLEWARE = [
@@ -89,12 +89,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'core.wsgi.application'
 
-#DEFAULT_AUTO_FIELD='django.db.models.AutoField'
-DEFAULT_AUTO_FIELD='django.db.models.BigAutoField'
-
-
-
-
+# DEFAULT_AUTO_FIELD='django.db.models.AutoField'
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
@@ -105,10 +101,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
-
-
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -128,8 +120,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
@@ -143,9 +133,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
-
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
@@ -156,8 +143,6 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "static", "media_root")
 # ...
 SITE_ID = 1
-
-
 
 ####################################
 ##  CKEDITOR CONFIGURATION ##
@@ -176,20 +161,19 @@ RECAPTCHA_PUBLIC_KEY = '6Le4K_4ZAAAAAFlxvlemZk5oeKMgrXrmNMtbbZLT'
 RECAPTCHA_PRIVATE_KEY = '6Le4K_4ZAAAAAIE5eYCdFbJrdfSOJUuuASyRVIfX'
 SILENCED_SYSTEM_CHECKS = ['captcha.recaptcha_test_key_error']
 
-
 # REST_FRAMEWORK CONFIGURATION
 
 REST_FRAMEWORK = {
-     'DEFAULT_AUTHENTICATION_CLASSES': [
-         'rest_framework.authentication.SessionAuthentication',
-         'rest_framework.authentication.TokenAuthentication',
-     ],
-     'DEFAULT_PERMISSION_CLASSES': [
-         'rest_framework.permissions.IsAuthenticatedOrReadOnly',
-     ],
-     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
-     'PAGE_SIZE': 5,
-     'DEFAULT_FILTER_BACKENDS': (
-     'django_filters.rest_framework.DjangoFilterBackend',
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticatedOrReadOnly',
+    ],
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE': 5,
+    'DEFAULT_FILTER_BACKENDS': (
+        'django_filters.rest_framework.DjangoFilterBackend',
     ),
 }

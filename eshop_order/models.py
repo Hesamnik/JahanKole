@@ -94,7 +94,8 @@ class Order(models.Model):
         verbose_name_plural = 'سفارشات'
 
     def user_name(self):
-        return self.user.first_name + ' ' + self.user.last_name + ' ( ' + self.user.username + ' ) '
+        if self.user:
+            return self.user.first_name + ' ' + self.user.last_name + ' ( ' + self.user.username + ' ) '
 
     user_name.short_description = 'نام کاربری'
 

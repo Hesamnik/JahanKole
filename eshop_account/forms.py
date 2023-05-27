@@ -29,13 +29,14 @@ class RegisterForm(forms.Form):
             validators.MinLengthValidator(4, 'نام کاربری نباید کمتر از 4 کارکتر باشد')
         ]
     )
-    email = forms.EmailField(
-        widget=forms.EmailInput(attrs={'placeholder': 'ایمیل خود را وارد کنید', 'class': "input-ui pr-2 "}),
-        label='ایمیل'
-    )
     phone = forms.CharField(
         widget=forms.NumberInput(attrs={'placeholder': 'تلفن خود را وارد کنید', 'class': "input-ui pr-2"}),
         label='تلفن'
+    )
+    email = forms.EmailField(
+        widget=forms.EmailInput(attrs={'placeholder': 'ایمیل خود را وارد کنید', 'class': "input-ui pr-2 "}),
+        label='ایمیل'
+
     )
     password = forms.CharField(
         widget=forms.PasswordInput(attrs={'placeholder': 'رمز خود را وارد کنید', 'class': "input-ui pr-2 "}),
@@ -52,6 +53,13 @@ class RegisterForm(forms.Form):
             raise forms.ValidationError('این نام کاربری از قبل وجود دارد')
         return username
 
+    # def clean_phone(self):
+    #     phone = self.cleaned_data.get('phone')
+    #     is_exist_user_by_phone = User.objects.filter(phone=phone).exists()
+    #     if is_exist_user_by_phone:
+    #         raise forms.ValidationError('این شماره تلفن از قبل وجود دارد')
+    #     return phone
+
     def clean_email(self):
         email = self.cleaned_data.get('email')
         is_exist_user_by_email = User.objects.filter(email=email).exists()
@@ -61,7 +69,7 @@ class RegisterForm(forms.Form):
 
     # def clean_phone(self):
     #     phone = self.cleaned_data.get('phone')
-    #     is_exist_user_by_phone = User.objects.filter(phone=phone).exists()
+    #     is_exist_user_by_phone = UserProfile.phone = RegisterForm.phone
     #     if is_exist_user_by_phone:
     #         raise forms.ValidationError('این تلفن قبلا استفاده شده است ')
     #     else:

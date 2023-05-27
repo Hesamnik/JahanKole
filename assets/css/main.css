@@ -4017,7 +4017,7 @@ input[type=radio]:checked + .ui-variant--check {
 .profile-sidebar-header .profile-link a {
     display: block;
     width: 100%;
-    height: 100%;
+    height: 10%;
     color: #7b7b7b;
 }
 
