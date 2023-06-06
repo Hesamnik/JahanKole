@@ -31,16 +31,49 @@ The website displays products. Users can add and remove products to/from their c
     </td>
     <td align="center">
       <a href="https://github.com/Hesamnik/JahanKole/blob/master/screenshots/3.png">
-        <a href="https://github.com/Hesamnik/JahanKole/blob/master/screenshots/4.png">
         <img src="screenshots/3.png" alt="Latest products">
-          <img src="screenshots/4.png" alt="Latest products">
       </a>
       <br />
-      <p>account</p>
+      <p>Latest products</p>
     </td>
     <td align="center">
-      <a href="https://github.com/nimadorostkar/Didikala/blob/master/screenshots/4.png">
-        <img src="screenshots/4.png" alt="orders">
+      <a href="https://github.com/Hesamnik/JahanKole/blob/master/screenshots/4.png">
+        <img src="screenshots/4.png" alt="Latest products">
+      </a>
+      <br />
+      <p>Latest products</p>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Hesamnik/JahanKole/blob/master/screenshots/4.png">
+        <img src="screenshots/4.png" alt="Latest products">
+      </a>
+      <br />
+      <p>Latest products</p>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Hesamnik/JahanKole/blob/master/screenshots/9.png">
+        <img src="screenshots/9.png" alt="orders">
+      </a>
+      <br />
+      <p>orders</p>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Hesamnik/JahanKole/blob/master/screenshots/12.png">
+        <img src="screenshots/12.png" alt="orders">
+      </a>
+      <br />
+      <p>orders</p>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Hesamnik/JahanKole/blob/master/screenshots/13.png">
+        <img src="screenshots/13.png" alt="orders">
+      </a>
+      <br />
+      <p>orders</p>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Hesamnik/JahanKole/blob/master/screenshots/14.png">
+        <img src="screenshots/14.png" alt="orders">
       </a>
       <br />
       <p>orders</p>
