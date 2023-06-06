@@ -14,7 +14,7 @@ The website displays products. Users can add and remove products to/from their c
 ### Screenshots
 
 <table>
-<!--   <tr>
+  <tr>
   <td align="center">
       <a href="https://github.com/nimadorostkar/Didikala/blob/master/screenshots/1.png">
         <img src="screenshots/1.png" alt="home page">
@@ -50,7 +50,7 @@ The website displays products. Users can add and remove products to/from their c
       <br />
       <p>product page</p>
     </td>
-    </tr> -->
+    </tr>
 </table>
 
 ### Clone this repository
