@@ -17,7 +17,7 @@ The website displays products. Users can add and remove products to/from their c
   <tr>
   <td align="center">
       <a href="https://github.com/Hesamnik/JahanKole/blob/master/screenshots/Screenshot106.png">
-        <img src="screenshots/1.png" alt="home page">
+        <img src="screenshots/Screenshot_106.png" alt="home page">
       </a>
       <br />
       <p>home page</p>
