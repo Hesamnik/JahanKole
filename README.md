@@ -16,21 +16,21 @@ The website displays products. Users can add and remove products to/from their c
 <table>
   <tr>
   <td align="center">
-      <a href="https://github.com/Hesamnik/JahanKole/blob/master/screenshots/Screenshot106.png">
+      <a href="https://github.com/Hesamnik/JahanKole/blob/master/screenshots/Screenshot_106.png">
         <img src="screenshots/Screenshot_106.png" alt="home page">
       </a>
       <br />
       <p>home page</p>
     </td>
     <td align="center">
-      <a href="https://github.com/nimadorostkar/Didikala/blob/master/screenshots/2.png">
+      <a href="https://github.com/Hesamnik/JahanKole/blob/master/screenshots/2.png">
         <img src="screenshots/2.png" alt="products">
       </a>
       <br />
       <p>products</p>
     </td>
     <td align="center">
-      <a href="https://github.com/nimadorostkar/Didikala/blob/master/screenshots/3.png">
+      <a href="https://github.com/Hesamnik/JahanKole/blob/master/screenshots/3.png">
         <img src="screenshots/3.png" alt="account">
       </a>
       <br />
