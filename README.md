@@ -44,11 +44,11 @@ The website displays products. Users can add and remove products to/from their c
       <p>Latest products</p>
     </td>
     <td align="center">
-      <a href="https://github.com/Hesamnik/JahanKole/blob/master/screenshots/4.png">
-        <img src="screenshots/4.png" alt="Latest products">
+      <a href="https://github.com/Hesamnik/JahanKole/blob/master/screenshots/11.png">
+        <img src="screenshots/11.png" alt="account">
       </a>
       <br />
-      <p>Latest products</p>
+      <p>account</p>
     </td>
     <td align="center">
       <a href="https://github.com/Hesamnik/JahanKole/blob/master/screenshots/9.png">
@@ -79,8 +79,8 @@ The website displays products. Users can add and remove products to/from their c
       <p>orders</p>
     </td>
     <td align="product pag">
-      <a href="https://github.com/nimadorostkar/Didikala/blob/master/screenshots/5.png">
-        <img src="screenshots/5.png" alt="product page">
+      <a href="https://github.com/Hesamnik/JahanKole/blob/master/screenshots/7.png">
+        <img src="screenshots/7.png" alt="product page">
       </a>
       <br />
       <p>product page</p>
