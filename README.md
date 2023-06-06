@@ -31,7 +31,9 @@ The website displays products. Users can add and remove products to/from their c
     </td>
     <td align="center">
       <a href="https://github.com/Hesamnik/JahanKole/blob/master/screenshots/3.png">
-        <img src="screenshots/3.png" alt="account">
+        <a href="https://github.com/Hesamnik/JahanKole/blob/master/screenshots/4.png">
+        <img src="screenshots/3.png" alt="Latest products">
+          <img src="screenshots/4.png" alt="Latest products">
       </a>
       <br />
       <p>account</p>
