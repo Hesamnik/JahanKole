@@ -217,7 +217,7 @@ def my_grouper(n, iterable):
 def product_detail(request, product_id, slug):
     query = request.GET.get('qv')
     product = Product.objects.get_by_id(product_id)
-    if product == None:
+    if product is None:
         return HttpResponseNotFound('<h1>Page not found</h1>')
 
     # for each view, add 1 view count to product views

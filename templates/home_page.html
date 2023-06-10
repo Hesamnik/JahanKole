@@ -96,7 +96,7 @@
                                                 <div class="product-card-body">
                                                     <a class="product-meta"
                                                        href="/product_detail/{{ pl.id }}/{{ pl.slug }}">{{ pl.title|truncatechars:20 }}</a>
-                                                    <span class="product-price">{{ pl.variant.price|first }} تومان</span>
+                                                    <span class="product-price">{{ pl.price|intcomma:False }} تومان</span>
                                                 </div>
                                                     {% else %}
                                                     <div class="product-card-body">

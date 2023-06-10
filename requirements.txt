@@ -18,7 +18,6 @@ djangorestframework
 djangorestframework-recursive
 drf-yasg
 drf-yasg2
-idna
 importlib-metadata
 inflection
 itypes
@@ -31,7 +30,6 @@ pytz
 requests
 ruamel.yaml
 ruamel.yaml.clib
-six
 sorl-thumbnail
 sqlparse
 typing-extensions
